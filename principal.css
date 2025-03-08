@@ -1,47 +1,49 @@
+/* General */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffccff;
-    color: #800080;
+    background-color: #f8dadc;
+    color: #491c78;
 }
 
+/* Navbar */
 .navbar {
+    background-color: #491c78;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    background-color: #6A008A;
     padding: 10px 20px;
-    color: white;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
+/* Logo */
 .logo img {
-    height: 40px;
-    margin-right: 10px;
+    height: 70px;
 }
 
+/* Menú */
 .menu {
     display: flex;
-    gap: 20px;
+    gap: 60px;
 }
 
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
+.menu a img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu a img:hover {
+    transform: scale(1.1);
+}
+
+/* Search Bar y Usuario */
+.right-section {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 }
 
-.menu a:hover {
-    color: #FFD700;
-}
-
+/* Search Bar */
 .search-box {
     display: flex;
     align-items: center;
@@ -60,11 +62,15 @@ body {
 .search-box button {
     background: none;
     border: none;
-    color: #6A008A;
     cursor: pointer;
-    font-size: 16px;
 }
 
+.search-box button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* STEAM Explorer */
 .steam-explorer {
     background-color: #FFD700;
     padding: 5px 15px;
@@ -74,9 +80,61 @@ body {
     color: #6A008A;
 }
 
-.image-box img {
-    width: 100%;
-    max-height: 180px;
-    object-fit: cover;
+/* Imagen de usuario */
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
 
+/* Contenido principal */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8dadc;
+    border-radius: 15px;
+}
+
+/* Layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Sección izquierda */
+.left {
+    width: 50%;
+}
+
+/* Sección derecha */
+.right {
+    width: 50%;
+    text-align: center;
+}
+
+/* Imagen de decoración */
+.decoracion {
+    width: 150%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.decoracion {
+    
+}
+/* Lista del equipo */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 20px;
+    font-weight: bold;
 }
